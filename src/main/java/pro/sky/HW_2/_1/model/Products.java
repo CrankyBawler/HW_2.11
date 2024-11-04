@@ -1,9 +1,14 @@
 package pro.sky.HW_2._1.model;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.SessionScope;
+
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-
+@Component
+@SessionScope
 public class Products {
 
     private final List<Integer> products;
